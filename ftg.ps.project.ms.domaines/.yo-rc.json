@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "ftg.ps.project.ms.domaines",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "5.1.0",
+    "applicationType": "microservice",
+    "baseName": "mcsDomaines",
+    "packageName": "ftg.ps.project.ms.domaines",
+    "packageFolder": "ftg/ps/project/ms/domaines",
+    "serverPort": "8086",
+    "authenticationType": "uaa",
+    "uaaBaseName": "psUAA",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "9c02834990e30f395a12a39cd77e6ef39b97b26d",
+    "enableTranslation": true,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "yarn",
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "ActeurDomaine",
+    "fields": [
+        {
+            "fieldName": "idActeur",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "domaineActeur",
+            "otherEntityName": "domaine",
+            "otherEntityRelationshipName": "acteurDomaine"
+        }
+    ],
+    "changelogDate": "20180727011053",
+    "entityTableName": "acteur_domaine",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "mcsDomaines"
+}

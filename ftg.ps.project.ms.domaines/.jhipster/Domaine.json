@@ -1,0 +1,61 @@
+{
+    "name": "Domaine",
+    "fields": [
+        {
+            "fieldName": "domaineId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "createdDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "domaineActivites",
+            "otherEntityName": "activite",
+            "otherEntityRelationshipName": "domaine"
+        },
+        {
+            "relationshipName": "acteurDomaine",
+            "otherEntityName": "acteurDomaine",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180727011051",
+    "entityTableName": "domaine",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "mcsDomaines"
+}

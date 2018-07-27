@@ -1,0 +1,33 @@
+entity Domaine {
+    domaineId Long,
+    nom String,
+    description String,
+    status Boolean,//ex: actif, inactif, gelé
+    userCreated Long,
+    userLastModif Long,
+    createdDate LocalDate,
+    dateastModif LocalDate
+    }
+
+entity Activite {
+    activiteId Long,
+    nom String,
+    description String,
+    categorie String,
+    dateDebut LocalDate,
+    dateFin LocalDate,
+    status Boolean,//ex: actif, inactif, gelé
+    userCreated Long,
+    userLastModif Long,
+    createdDate LocalDate,
+    dateLastModif LocalDate
+    }
+
+entity ActeurDomaine{
+    idActeur Long
+}
+
+relationship OneToMany{
+ActeurDomaine{domaineActeur} to Domaine,
+Domaine{domaineActivites} to Activite
+}
